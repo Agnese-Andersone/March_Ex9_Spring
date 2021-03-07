@@ -19,4 +19,17 @@ public class FileDataService {
         return fileDataRepository.findById(myFileId)
                 .orElseThrow(()-> new SdaException("There is no such file"));
     }
+
+    public FileData save(FileData fileData) {
+        return fileDataRepository.save(fileData);
+    }
+
+    public FileData update(String myFileId, FileData fileData) {
+        FileData fileToUpdate = getById(myFileId);
+        return fileDataRepository.save(fileData);
+    }
+
+    public void delete(String myFileId) {
+        fileDataRepository.deleteById(myFileId);
+    }
 }
