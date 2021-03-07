@@ -1,4 +1,4 @@
-package Exercise9Agnese;
+package Exercise9Agnese.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,5 +7,5 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class FileDataWrapper {
-    List<FileData> all;
+    private List<FileData> all;
 }

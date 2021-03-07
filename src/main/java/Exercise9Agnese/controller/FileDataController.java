@@ -1,5 +1,7 @@
-package Exercise9Agnese;
+package Exercise9Agnese.controller;
 
+import Exercise9Agnese.model.FileDataWrapper;
+import Exercise9Agnese.service.FileDataService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
