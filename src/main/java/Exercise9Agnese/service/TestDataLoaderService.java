@@ -21,5 +21,7 @@ public class TestDataLoaderService implements CommandLineRunner {
                         FileData.builder().fileName("Three").build()
                 )
         );
+        List<FileData> all = fileDataRepository.findAll();
+        System.out.println(all);
     }
 }
