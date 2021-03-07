@@ -16,9 +16,9 @@ public class TestDataLoaderService implements CommandLineRunner {
     public void run(String... args) throws Exception {
         fileDataRepository.saveAll(
                 List.of(
-                        FileData.builder().fileName("One").build(),
-                        FileData.builder().fileName("Two").build(),
-                        FileData.builder().fileName("Three").build()
+                        FileData.builder().fileName("One").extension("xml").content("tables").sizeInKb(1405L).build(),
+                        FileData.builder().fileName("Two").extension("docx").content("texts").sizeInKb(566L).build(),
+                        FileData.builder().fileName("Three").extension("jpeg").content("pictures").sizeInKb(5405L).build()
                 )
         );
         List<FileData> all = fileDataRepository.findAll();
